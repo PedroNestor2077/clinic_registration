@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "919bb6f5-857d-498e-9806-e6110179b9a8",
+		"name": "Desafio temSaude",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19929341"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/ping",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findClinics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/clinic?address=Miramontes",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"clinic"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "Miramontes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createClinic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Clinic\": {\n        \"Name\": \"332\",\n        \"CNPJ\": 3232\n    },\n    \"Address\": {\n        \"Numero\": 6720,\n        \"Logradouro\": \"Av. Dr. Wiliam Azuz\",\n        \"Bairro\": \"Miramontes\",\n        \"Cidade\": \"Franca\",\n        \"Estado\": \"SP\",\n        \"Pais\": \"Brazil\",\n        \"Latitude\": -20.4887672,\n        \"Longitude\": -47.398419,\n        \"Complemento\":\"aa\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/clinic",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"clinic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAddress",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/address?search=franca+sp+ronan+rocha",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"address"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "franca+sp+ronan+rocha"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

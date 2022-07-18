@@ -16,5 +16,6 @@
     -$ yarn start || npm start
 
     Disponivel em: http://localhost:4000/ping
+    -- Deixei uma collection para testes na api.
 
 -- Node v18 required.
