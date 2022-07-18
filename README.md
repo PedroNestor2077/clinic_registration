@@ -12,10 +12,12 @@
 
     -$ cd backend
     -$ yarn || npm install
-    -$ yarn build || npm build
+    -$ yarn build || npm run build
     -$ yarn start || npm start
 
     Disponivel em: http://localhost:4000/ping
     -- Deixei uma collection para testes na api.
 
 -- Node v18 required.
+
+-- Para versoes anteriores do node/npm use a flag " --legacy-peer-deps " na instalaçao dos pacotes.
