@@ -1,3 +1,6 @@
+# What is it
+ This project uses "Leaflet" map and Google Maps Api to find addresses and medical clinics.
+
 # Running.
 
 # Front-end
