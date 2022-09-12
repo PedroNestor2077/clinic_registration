@@ -1,4 +1,4 @@
-# Rodando o projeto.
+# Running.
 
 # Front-end
 
@@ -6,7 +6,7 @@
     -$ yarn || npm install
     -$ yarn start  || npm start
 
-    Disponivel em: http://localhost:3000
+    available in: http://localhost:3000
 
 # Back-end
 
@@ -15,9 +15,7 @@
     -$ yarn build || npm run build
     -$ yarn start || npm start
 
-    Disponivel em: http://localhost:4000/ping
-    -- Deixei uma collection para testes na api.
-
+    available in: http://localhost:4000/ping
+    
 -- Node v18 required.
-
--- Para versoes anteriores do node/npm use a flag " --legacy-peer-deps " na instalaçao dos pacotes.
+-- For older versions of node/npm use the " --legacy-peer-deps " flag when installing packages.
